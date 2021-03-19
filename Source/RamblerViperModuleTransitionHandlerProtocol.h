@@ -13,8 +13,8 @@
 @protocol RamblerViperModuleTransitionHandlerProtocol;
 @protocol RamblerViperModuleFactoryProtocol;
 
-typedef void (^ModuleTransitionBlock)(id<RamblerViperModuleTransitionHandlerProtocol> sourceModuleTransitionHandler,
-                                      id<RamblerViperModuleTransitionHandlerProtocol> destinationModuleTransitionHandler);
+typedef void (^ModuleTransitionBlock)(__kindof id<RamblerViperModuleTransitionHandlerProtocol> sourceModuleTransitionHandler,
+                                      __kindof id<RamblerViperModuleTransitionHandlerProtocol> destinationModuleTransitionHandler);
 
 /**
  Protocol defines interface for intermodule transition
